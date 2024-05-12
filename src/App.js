@@ -12,7 +12,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar></Navbar>
+      <Navbar isAuth={isAuth}></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/createpost" element={<CreatePost></CreatePost>}></Route>
@@ -20,7 +20,10 @@ function App() {
           path="/login"
           element={<Login setIsAuth={setIsAuth}></Login>}
         ></Route>
-        <Route path="/logout" element={<Logout></Logout>}></Route>
+        <Route
+          path="/logout"
+          element={<Logout setIsAuth={setIsAuth}></Logout>}
+        ></Route>
       </Routes>
     </Router>
   );
