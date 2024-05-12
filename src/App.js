@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import CreatePost from "./components/CreatePost";
 import Login from "./components/Login";
 import Logout from "./components/Logout";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
