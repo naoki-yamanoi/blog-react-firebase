@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const Logout = ({ setIsAuth }) => {
   const navigate = useNavigate();
-  const Logout = () => {
+  const logout = () => {
     signOut(auth).then(() => {
       localStorage.clear();
       setIsAuth(false);
@@ -16,7 +16,7 @@ const Logout = ({ setIsAuth }) => {
   return (
     <div>
       <p>ログアウトする</p>
-      <button onClick={Logout}>ログアウト</button>
+      <button onClick={logout}>ログアウト</button>
     </div>
   );
 };
