@@ -15,7 +15,10 @@ function App() {
       <Navbar isAuth={isAuth}></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/createpost" element={<CreatePost></CreatePost>}></Route>
+        <Route
+          path="/createpost"
+          element={<CreatePost isAuth={isAuth}></CreatePost>}
+        ></Route>
         <Route
           path="/login"
           element={<Login setIsAuth={setIsAuth}></Login>}

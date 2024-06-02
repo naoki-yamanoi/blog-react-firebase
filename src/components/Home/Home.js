@@ -12,7 +12,7 @@ const Home = () => {
       setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getPosts();
-  });
+  }, []);
 
   return (
     <div className="homePage">
